@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>El Barrio Mexican Grill | Fresh Tacos, Burritos & Bowls in Boston</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,600;9..144,800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- Navigation -->
+<header class="navbar" id="navbar">
+  <div class="nav-container">
+    <a href="#home" class="logo">El <span>Barrio</span></a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#home">Home</a>
+      <a href="#menu">Menu</a>
+      <a href="#catering">Catering</a>
+      <a href="#locations">Locations</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a href="#order" class="btn btn-primary nav-order">Order Online</a>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- Hero -->
+<section class="hero" id="home">
+  <div class="hero-overlay"></div>
+  <img src="images/hero.png" alt="Fresh Mexican street food spread" class="hero-img">
+  <div class="hero-content">
+    <p class="eyebrow">Boston &bull; Milton &bull; Made with Corazón</p>
+    <h1>Fresh Mexican Street Food, <span>Big Flavor.</span></h1>
+    <p class="hero-sub">Tacos, burritos, bowls, quesadillas & nachos made fresh daily across our Massachusetts locations.</p>
+    <div class="hero-cta">
+      <a href="#order" class="btn btn-primary">Order Online</a>
+      <a href="#menu" class="btn btn-outline">View Menu</a>
+    </div>
+  </div>
+  <a href="#menu" class="scroll-indicator" aria-label="Scroll down">&#8595;</a>
+</section>
+
+<!-- Stats strip -->
+<section class="stats-strip">
+  <div class="stat"><span class="stat-num" data-target="4">0</span><span class="stat-label">Locations</span></div>
+  <div class="stat"><span class="stat-num" data-target="15">0</span><span class="stat-label">Years of Flavor</span></div>
+  <div class="stat"><span class="stat-num" data-target="100">0</span><span class="stat-label">% Fresh Daily</span></div>
+  <div class="stat"><span class="stat-num" data-target="5000">0</span><span class="stat-label">Happy Guests / mo</span></div>
+</section>
+
+<!-- About -->
+<section class="about" id="about">
+  <div class="about-grid">
+    <div class="about-text">
+      <p class="eyebrow">Our Story</p>
+      <h2>Warm, Welcoming, Made with Corazón</h2>
+      <p>El Barrio Mexican Grill serves fresh Mexican street food including tacos, burritos, bowls, quesadillas, and nachos — made fresh daily with bold flavors and fast, friendly service across the Boston area.</p>
+      <p>Whether you're grabbing lunch on Dorchester Ave or settling in for dinner in Milton, expect comforting vibes, honest ingredients, and a menu built for real flavor lovers.</p>
+      <a href="#menu" class="btn btn-primary">Explore the Menu</a>
+    </div>
+    <div class="about-cards">
+      <div class="mini-card">
+        <span class="mini-icon">🌮</span>
+        <h3>Made Fresh Daily</h3>
+        <p>Every taco, bowl, and burrito is prepared to order with real ingredients.</p>
+      </div>
+      <div class="mini-card">
+        <span class="mini-icon">⚡</span>
+        <h3>Fast & Friendly</h3>
+        <p>Quick service without cutting corners on flavor or quality.</p>
+      </div>
+      <div class="mini-card">
+        <span class="mini-icon">📍</span>
+        <h3>4 MA Locations</h3>
+        <p>Serving Boston and Milton communities near you.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Menu -->
+<section class="menu" id="menu">
+  <p class="eyebrow center">Fan Favorites</p>
+  <h2 class="section-title center">Our Menu</h2>
+  <div class="menu-filters" id="menuFilters">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="tacos">Tacos</button>
+    <button class="filter-btn" data-filter="burritos">Burritos & Bowls</button>
+    <button class="filter-btn" data-filter="apps">Apps & Sides</button>
+  </div>
+  <div class="menu-grid" id="menuGrid">
+
+    <div class="menu-card" data-cat="tacos">
+      <div class="menu-card-badge">Popular</div>
+      <h3>Birria Trio</h3>
+      <p>Three slow-braised birria tacos with melted cheese and rich consommé for dipping.</p>
+      <span class="price">$15.00</span>
+    </div>
+
+    <div class="menu-card" data-cat="tacos">
+      <h3>Fish Tacos</h3>
+      <p>Crispy fish, cabbage slaw, pico de gallo, and chipotle crema on soft tortillas.</p>
+      <span class="price">$12.50</span>
+    </div>
+
+    <div class="menu-card" data-cat="tacos">
+      <h3>Steak & Chicken Tacos</h3>
+      <p>Grilled steak or chicken, corn, pico de gallo, cilantro, cotija, and lime.</p>
+      <span class="price">$11.00</span>
+    </div>
+
+    <div class="menu-card" data-cat="burritos">
+      <h3>Classic Burrito</h3>
+      <p>Flour tortilla filled with rice, beans, cheese, pico de gallo, and sour cream.</p>
+      <span class="price">$10.50</span>
+    </div>
+
+    <div class="menu-card" data-cat="burritos">
+      <h3>Rice Bowl</h3>
+      <p>Rice, beans, choice of protein, lettuce, pico de gallo, sour cream, and salsa verde.</p>
+      <span class="price">$11.50</span>
+    </div>
+
+    <div class="menu-card" data-cat="burritos">
+      <h3>Chicken Chimichanga</h3>
+      <p>Deep-fried burrito stuffed with seasoned chicken, cheese, and all the fixings.</p>
+      <span class="price">$12.00</span>
+    </div>
+
+    <div class="menu-card" data-cat="apps">
+      <h3>Birria Empanada</h3>
+      <p>A golden, crispy empanada filled with tender slow-cooked birria and melted cheese.</p>
+      <span class="price">$6.50</span>
+    </div>
+
+    <div class="menu-card" data-cat="apps">
+      <h3>Guac & Chips</h3>
+      <p>Freshly made guacamole served with warm, crispy tortilla chips.</p>
+      <span class="price">$7.00</span>
+    </div>
+
+    <div class="menu-card" data-cat="apps">
+      <h3>Loaded Nachos</h3>
+      <p>Crispy chips piled high with cheese, beans, pico de gallo, and crema.</p>
+      <span class="price">$9.50</span>
+    </div>
+
+  </div>
+</section>
+
+<!-- Catering -->
+<section class="catering" id="catering">
+  <div class="catering-grid">
+    <div class="catering-text">
+      <p class="eyebrow">Events & Office Lunches</p>
+      <h2>Catering Made Easy</h2>
+      <p>From office lunches to family celebrations, our catering brings all your favorites — tacos, burritos, bowls, and crowd-pleasing sides — fresh, easy, and ready to serve.</p>
+      <p>Choose a quick drop-off or a full taco-bar setup and let us handle the food while you enjoy the moment.</p>
+      <a href="#contact" class="btn btn-primary">Request Catering</a>
+    </div>
+    <div class="catering-quote">
+      <blockquote>"The staff set up a taco bar for 70 people at my home. Everything came hot and ready to serve. The kids loved the empanadas and quesadillas!"</blockquote>
+      <span>— Verified Catering Guest</span>
+    </div>
+  </div>
+</section>
+
+<!-- App / Rewards -->
+<section class="rewards" id="order">
+  <div class="rewards-grid">
+    <div class="rewards-text">
+      <p class="eyebrow">El Barrio Rewards</p>
+      <h2>Order Ahead. Earn Rewards. Eat More.</h2>
+      <p>With the El Barrio app, order ahead, earn rewards on every purchase, and unlock exclusive specials and limited-time street-food flavors. Fast, convenient, and made for true El Barrio fans.</p>
+      <div class="rewards-btns">
+        <a href="#" class="btn btn-primary">Order Online</a>
+        <a href="#" class="btn btn-outline">Get the App</a>
+      </div>
+    </div>
+    <div class="rewards-card">
+      <h3>Digital Gift Cards</h3>
+      <p>Share the warmth of El Barrio with friends, family, or coworkers.</p>
+      <a href="#" class="btn btn-secondary">Send a Gift Card</a>
+    </div>
+  </div>
+</section>
+
+<!-- Locations -->
+<section class="locations" id="locations">
+  <p class="eyebrow center">Find Us</p>
+  <h2 class="section-title center">Locations</h2>
+  <div class="locations-grid">
+    <div class="location-card">
+      <h3>Dorchester Ave</h3>
+      <p>1782 Dorchester Avenue<br>Boston, MA 02124</p>
+      <p class="loc-phone">(617) 698-8900</p>
+      <span class="open-tag">Open Now &bull; Closes 9PM</span>
+    </div>
+    <div class="location-card">
+      <h3>South End</h3>
+      <p>809 Harrison Avenue<br>Boston, MA 02118</p>
+      <p class="loc-phone">(617) 639-0311</p>
+      <span class="open-tag">Open Now &bull; Closes 9PM</span>
+    </div>
+    <div class="location-card">
+      <h3>Central Ave, Milton</h3>
+      <p>27 Central Avenue<br>Milton, MA 02186</p>
+      <p class="loc-phone">(617) 322-3838</p>
+      <span class="open-tag">Open Now &bull; Closes 9PM</span>
+    </div>
+    <div class="location-card">
+      <h3>Adams St, Milton</h3>
+      <p>537 Adams Street<br>Milton, MA 02186</p>
+      <p class="loc-phone">N/A</p>
+      <span class="open-tag">Open Now &bull; Closes 9PM</span>
+    </div>
+  </div>
+</section>
+
+<!-- Reviews -->
+<section class="reviews" id="reviews">
+  <p class="eyebrow center">What Guests Say</p>
+  <h2 class="section-title center">Reviews</h2>
+  <div class="reviews-track" id="reviewsTrack">
+    <div class="review-card">
+      <p>"Best place, perfect service, amazing food... everything on the menu is phenomenal. Highly recommend."</p>
+      <span>★★★★★</span>
+    </div>
+    <div class="review-card">
+      <p>"The fish tacos and the guava margarita is phenomenal. Tried the sangria and didn't disappoint."</p>
+      <span>★★★★★</span>
+    </div>
+    <div class="review-card">
+      <p>"It was exceptionally clean, the staff was friendly, the food was delicious."</p>
+      <span>★★★★★</span>
+    </div>
+    <div class="review-card">
+      <p>"I've been living in Boston for a long time — there's an El Barrio closer to where I live and I only ever go here."</p>
+      <span>★★★★★</span>
+    </div>
+    <div class="review-card">
+      <p>"They were very understanding, hospitable, and dealt with my long winded order and request for recommendations."</p>
+      <span>★★★★★</span>
+    </div>
+  </div>
+</section>
+
+<!-- Newsletter -->
+<section class="newsletter">
+  <h2>Stay in the Flavor Loop</h2>
+  <p>Sign up to get new menu drops, special offers, and community news delivered straight to your inbox.</p>
+  <form id="newsletterForm" class="newsletter-form">
+    <input type="email" id="newsletterEmail" placeholder="Enter your email" required>
+    <button type="submit" class="btn btn-primary">Subscribe</button>
+  </form>
+  <p class="newsletter-msg" id="newsletterMsg"></p>
+</section>
+
+<!-- Contact / Footer -->
+<footer class="footer" id="contact">
+  <div class="footer-grid">
+    <div class="footer-col">
+      <a href="#home" class="logo footer-logo">El <span>Barrio</span></a>
+      <p>Fresh Mexican street food made with corazón. Serving the Boston community since day one.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Explore</h4>
+      <a href="#menu">Menu</a>
+      <a href="#catering">Catering</a>
+      <a href="#locations">Locations</a>
+      <a href="#reviews">Reviews</a>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <p>General Inquiries</p>
+      <p><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="39515c555556795c555b584b4b50565b564a4d5657175a5654">[email&#160;protected]</a></p>
+      <p>(617) 639-0311</p>
+    </div>
+    <div class="footer-col">
+      <h4>Follow</h4>
+      <div class="social-row">
+        <a href="#" aria-label="Instagram">IG</a>
+        <a href="#" aria-label="Facebook">FB</a>
+        <a href="#" aria-label="TikTok">TT</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2026 El Barrio Mexican Grill. All rights reserved.</p>
+    <div>
+      <a href="#">Terms of Service</a>
+      <a href="#">Privacy Statement</a>
+    </div>
+  </div>
+</footer>
+
+<button class="back-to-top" id="backToTop" aria-label="Back to top">&#8593;</button>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="script.js"></script>
+</body>
+</html>
