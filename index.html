@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TidyHouse Chores</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="logo">TidyHouse<span>Chores</span></div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#chores">Chore List</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="hero-text">
+      <h1>Keep Your Home Happy & Tidy</h1>
+      <p>A simple, fun way for families to track chores, earn points, and build good habits together.</p>
+      <a href="#chores" class="btn">See the Chore List</a>
+    </div>
+    <img src="images/hero.png" alt="Family chore chart illustration" class="hero-img">
+  </section>
+
+  <section id="about" class="about">
+    <h2>About TidyHouse</h2>
+    <p>TidyHouse Chores started as a small family project to make household responsibilities feel less like a burden
+      and more like a team effort. Instead of nagging and forgotten tasks, we wanted a simple visual system that
+      everyone in the house — kids and parents alike — could check at a glance.</p>
+    <p>This site is a demo built to explore what a lightweight, no-login, no-cost chore tracker could look like.
+      Every chore below is an example — feel free to imagine it as your own household's list!</p>
+  </section>
+
+  <section id="chores" class="chores">
+    <h2>This Week's Chore List</h2>
+    <img src="images/icons.png" alt="Chore icons: sweeping, laundry, dishes" class="icons-img">
+
+    <div class="chore-grid" id="choreGrid">
+      <div class="chore-card">
+        <h3>🧹 Sweep the Kitchen</h3>
+        <p>Assigned to: Joe</p>
+        <label><input type="checkbox"> Mark Complete</label>
+      </div>
+      <div class="chore-card">
+        <h3>🧺 Fold Laundry</h3>
+        <p>Assigned to: Mom</p>
+        <label><input type="checkbox"> Mark Complete</label>
+      </div>
+      <div class="chore-card">
+        <h3>🍽️ Wash Dishes</h3>
+        <p>Assigned to: Dad</p>
+        <label><input type="checkbox"> Mark Complete</label>
+      </div>
+      <div class="chore-card">
+        <h3>🗑️ Take Out Trash</h3>
+        <p>Assigned to: Brendan</p>
+        <label><input type="checkbox"> Mark Complete</label>
+      </div>
+      <div class="chore-card">
+        <h3>🛏️ Make Bed</h3>
+        <p>Assigned to: Gillian</p>
+        <label><input type="checkbox"> Mark Complete</label>
+      </div>
+      <div class="chore-card">
+        <h3>🐶 Feed the Dog</h3>
+        <p>Assigned to: Emma</p>
+        <label><input type="checkbox"> Mark Complete</label>
+      </div>
+    </div>
+
+    <p id="progressText">0 of 6 chores complete</p>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Get In Touch</h2>
+    <p>Have feedback on this demo site? This is a personal project built to practice web development from scratch.</p>
+    <form onsubmit="return false;">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" rows="4" required></textarea>
+      <button type="submit" class="btn">Send (Demo Only)</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 TidyHouse Chores — A Personal Practice Project by Joe Jolley</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
